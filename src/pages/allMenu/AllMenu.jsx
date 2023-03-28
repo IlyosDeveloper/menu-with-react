@@ -26,7 +26,7 @@ function AllMenu() {
     <div className='section-center'>
       {data &&
         data.map((item) => {
-          const { img, title, category, price, desc, id } = item;
+          const { img, title, price, desc, id } = item;
           return (
             <div className='menu-item' key={id}>
               <div className='foots'>

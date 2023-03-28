@@ -5,6 +5,7 @@ import AllMenu from "./pages/allMenu/AllMenu";
 import Breakfast from "./pages/breakfast/Breakfast";
 import Lunch from "./pages/lunch/Lunch";
 import Shakes from "./pages/shakes/Shakes";
+import Error from "./pages/pageNotFount/Error";
 
 import NavButtons from "./components/NavButtons";
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/breakfast' element={<Breakfast />} />
           <Route path='/lunch' element={<Lunch />} />
           <Route path='/shakes' element={<Shakes />} />
+          <Route path='*' element={<Error />} />
         </Routes>
       </Router>
     </div>
